@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Estructura de carpetas | Gaceta Docs</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="Documentación del proyecto web Gaceta Jurídica;">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.e21b98e0.css" as="style"><link rel="preload" href="/assets/js/app.8a55b452.js" as="script"><link rel="preload" href="/assets/js/2.eb78078e.js" as="script"><link rel="preload" href="/assets/js/15.dd666117.js" as="script"><link rel="prefetch" href="/assets/js/10.98201fc5.js"><link rel="prefetch" href="/assets/js/11.a82e35fd.js"><link rel="prefetch" href="/assets/js/12.0c80414d.js"><link rel="prefetch" href="/assets/js/13.f6e4f61a.js"><link rel="prefetch" href="/assets/js/14.12810de7.js"><link rel="prefetch" href="/assets/js/16.784e6a8d.js"><link rel="prefetch" href="/assets/js/17.20c7c8c5.js"><link rel="prefetch" href="/assets/js/18.6960c35f.js"><link rel="prefetch" href="/assets/js/19.aa3fe14e.js"><link rel="prefetch" href="/assets/js/3.fd867410.js"><link rel="prefetch" href="/assets/js/4.57532527.js"><link rel="prefetch" href="/assets/js/5.55986d32.js"><link rel="prefetch" href="/assets/js/6.7862f44a.js"><link rel="prefetch" href="/assets/js/7.16869fe0.js"><link rel="prefetch" href="/assets/js/8.32a138f1.js"><link rel="prefetch" href="/assets/js/9.f51f5238.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e21b98e0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Gaceta Docs</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/config/" class="nav-link">
+  Config
+</a></div><div class="nav-item"><a href="/erick/" class="nav-link">
+  Erick
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/config/" class="nav-link">
+  Config
+</a></div><div class="nav-item"><a href="/erick/" class="nav-link">
+  Erick
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Docs</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guia/" aria-current="page" class="sidebar-link">Introducción</a></li><li><a href="/guia/config.html" class="sidebar-link">Configuración principal</a></li><li><a href="/guia/estructura-carpetas.html" aria-current="page" class="active sidebar-link">Estructura de carpetas</a></li><li><a href="/guia/landings.html" class="sidebar-link">Landings</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="estructura-de-carpetas"><a href="#estructura-de-carpetas" class="header-anchor">#</a> Estructura de carpetas</h1> <p><strong>/data</strong> Contiene 3 archivos con información general de productos y módulos.</p> <p><strong>/data/lista-productos.js</strong> Contiene información general de los productos, algunas propiedades tienen comentarios descriptivos y otras se detallarán debajo de la imagen.</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+    id<span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token comment">// Id asignado, también reconocido por el backend</span>
+    idBackend<span class="token operator">:</span> <span class="token string">&quot;GAC-CIVIL&quot;</span><span class="token punctuation">,</span>
+    idParaRedirigirASoftware<span class="token operator">:</span> <span class="token string">'GacetaCivil'</span><span class="token punctuation">,</span>
+    logo<span class="token operator">:</span> <span class="token string">&quot;/imagenes/productos/civil/logo-civil.svg&quot;</span><span class="token punctuation">,</span> <span class="token comment">// Logo principal del producto</span>
+    nombre<span class="token operator">:</span> <span class="token string">'Gaceta Civil &amp; Procesal Civil'</span><span class="token punctuation">,</span>
+    text<span class="token operator">:</span> <span class="token string">&quot;Gaceta Civil &amp; Procesal Civil&quot;</span><span class="token punctuation">,</span>
+    descripcion<span class="token operator">:</span> <span class="token string">&quot;Descripcion Gaceta civil&quot;</span><span class="token punctuation">,</span>
+    imagenPrincipal<span class="token operator">:</span> <span class="token string">&quot;/imagenes/modulos/noticias/fondo-noticias.png&quot;</span><span class="token punctuation">,</span>
+    image<span class="token operator">:</span> <span class="token string">&quot;/iconos-productos/gaceta-civil.svg&quot;</span><span class="token punctuation">,</span>
+    imageOpacity<span class="token operator">:</span> <span class="token string">&quot;/iconos-productos/gaceta-civil-opacity.svg&quot;</span><span class="token punctuation">,</span>
+    tag<span class="token operator">:</span> <span class="token string">'civil'</span><span class="token punctuation">,</span>
+    nombreCarpetaEnPaginas<span class="token operator">:</span> <span class="token string">'noticias-informes-opiniones'</span><span class="token punctuation">,</span> <span class="token comment">// Nombre de la carpeta en el directorio pages</span>
+    route<span class="token operator">:</span> <span class="token string">&quot;/gaceta-civil-procesal-civil&quot;</span><span class="token punctuation">,</span>
+    logoZonaSuscriptores<span class="token operator">:</span> <span class="token string">'/productos/suscriptores/logo-civil.svg'</span><span class="token punctuation">,</span>
+    rutaTrastienda<span class="token operator">:</span> <span class="token string">'/productos/trastienda/civil'</span><span class="token punctuation">,</span>
+    modulos<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">,</span> <span class="token number">15</span><span class="token punctuation">,</span> <span class="token number">16</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// Id de cada módulo a encontrar en modulos.js</span>
+    openGraph<span class="token operator">:</span> <span class="token punctuation">{</span>
+        urlOficial<span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
+        keywords<span class="token operator">:</span> <span class="token string">'Keywords Gaceta civil'</span><span class="token punctuation">,</span>
+        image<span class="token operator">:</span> <span class="token string">'Image Gaceta civil'</span><span class="token punctuation">,</span>
+        whatsappImage<span class="token operator">:</span> <span class="token string">'Image whatsapp Gaceta civil'</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li><p><em>idBackend:</em> El código que se usará comparar y permitir o no el ingreso a ciertas publicaciones según el producto.</p></li> <li><p><em>tag:</em> Identificador rápido principalmente para ser utilizado dinámicamente en clases css.</p></li> <li><p><em>modulos:</em> Lista de identificadores de los módulos que pertenecen al producto. Los módulos se encuentran en <em>./data/lista-modulos.js</em> y se asignan al ingresar a la página <em>./pages/productos/_slug</em> la cual muestra la lista de módulos.</p></li></ul> <img src="/images/estructura-carpetas/lista-modulos.png" alt="foo"> <br> <br> <br> <p><strong>/data/lista-productos-menu.js</strong> Contiene información general de los productos que se mostrarán en el menu.</p> <p><strong>/data/lista-modulos.js</strong> Contiene información general de los módulos.</p> <p><strong>/static</strong> Contiene archivos estáticos que usará la aplicación como el favicon.ico, logos o íconos.</p> <p>...</p> <p><strong>Los demás archivos son propios del Framework <a href="https://nuxtjs.org/" target="_blank" rel="noopener noreferrer">Nuxt<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></strong></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/guia/config.html" class="prev">
+        Configuración principal
+      </a></span> <span class="next"><a href="/guia/landings.html">
+        Landings
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.8a55b452.js" defer></script><script src="/assets/js/2.eb78078e.js" defer></script><script src="/assets/js/15.dd666117.js" defer></script>
+  </body>
+</html>

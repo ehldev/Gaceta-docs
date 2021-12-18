@@ -1,0 +1,19 @@
+{
+  "name": "gaceta-docs",
+  "version": "0.0.1",
+  "description": "Documentación del proyecto web Gaceta Jurídica;",
+  "main": "index.js",
+  "authors": {
+    "name": "José",
+    "email": "jjollja@unnmsm.edu.pe"
+  },
+  "repository": "/Gaceta jurídica Docs",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}

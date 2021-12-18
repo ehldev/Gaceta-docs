@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Configuración principal | Gaceta Docs</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="Documentación del proyecto web Gaceta Jurídica;">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.e21b98e0.css" as="style"><link rel="preload" href="/assets/js/app.8a55b452.js" as="script"><link rel="preload" href="/assets/js/2.eb78078e.js" as="script"><link rel="preload" href="/assets/js/13.f6e4f61a.js" as="script"><link rel="prefetch" href="/assets/js/10.98201fc5.js"><link rel="prefetch" href="/assets/js/11.a82e35fd.js"><link rel="prefetch" href="/assets/js/12.0c80414d.js"><link rel="prefetch" href="/assets/js/14.12810de7.js"><link rel="prefetch" href="/assets/js/15.dd666117.js"><link rel="prefetch" href="/assets/js/16.784e6a8d.js"><link rel="prefetch" href="/assets/js/17.20c7c8c5.js"><link rel="prefetch" href="/assets/js/18.6960c35f.js"><link rel="prefetch" href="/assets/js/19.aa3fe14e.js"><link rel="prefetch" href="/assets/js/3.fd867410.js"><link rel="prefetch" href="/assets/js/4.57532527.js"><link rel="prefetch" href="/assets/js/5.55986d32.js"><link rel="prefetch" href="/assets/js/6.7862f44a.js"><link rel="prefetch" href="/assets/js/7.16869fe0.js"><link rel="prefetch" href="/assets/js/8.32a138f1.js"><link rel="prefetch" href="/assets/js/9.f51f5238.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e21b98e0.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Gaceta Docs</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/config/" class="nav-link">
+  Config
+</a></div><div class="nav-item"><a href="/erick/" class="nav-link">
+  Erick
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/config/" class="nav-link">
+  Config
+</a></div><div class="nav-item"><a href="/erick/" class="nav-link">
+  Erick
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Docs</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guia/" aria-current="page" class="sidebar-link">Introducción</a></li><li><a href="/guia/config.html" aria-current="page" class="active sidebar-link">Configuración principal</a></li><li><a href="/guia/estructura-carpetas.html" class="sidebar-link">Estructura de carpetas</a></li><li><a href="/guia/landings.html" class="sidebar-link">Landings</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="configuracion-principal"><a href="#configuracion-principal" class="header-anchor">#</a> Configuración principal</h1> <p>En la raíz del proyecto encontrará un archivo llamado env.js, el cual contiene
+información importante y global del proyecto.</p> <p>El archivo env tiene la siguiente estructura (Puede variar según la versión)</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token keyword">const</span> appConfig <span class="token operator">=</span> <span class="token punctuation">{</span>
+  graphUrl<span class="token operator">:</span> <span class="token string">&quot;https://api.gacetajuridica.com.pe/graphql&quot;</span><span class="token punctuation">,</span> <span class="token comment">// Endpoint Graphql</span>
+  cookieToken<span class="token operator">:</span> <span class="token string">&quot;gctoken&quot;</span><span class="token punctuation">,</span> <span class="token comment">// Nombre de cookie</span>
+  cookieDatosUsuario<span class="token operator">:</span> <span class="token string">&quot;gj_user&quot;</span><span class="token punctuation">,</span> <span class="token comment">// Nombre de cookie</span>
+
+  logoGacetaJuridica<span class="token operator">:</span> <span class="token string">&quot;/imagenes/logo-gaceta-juridica.svg&quot;</span><span class="token punctuation">,</span>
+
+  openGraph<span class="token operator">:</span> <span class="token punctuation">{</span>
+    urlOficial<span class="token operator">:</span> <span class="token string">&quot;https://gaceta.josejollja.com&quot;</span><span class="token punctuation">,</span>
+    title<span class="token operator">:</span> <span class="token string">&quot;Gaceta Jurídica&quot;</span><span class="token punctuation">,</span>
+    description<span class="token operator">:</span> <span class="token string">&quot;Descripción de Gaceta Jurídica&quot;</span><span class="token punctuation">,</span>
+    image<span class="token operator">:</span> <span class="token string">&quot;logo-gaceta&quot;</span><span class="token punctuation">,</span>
+    keywords<span class="token operator">:</span> <span class="token string">&quot;Keywords Gaceta&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  whatsapp<span class="token operator">:</span> <span class="token punctuation">{</span>
+    numero<span class="token operator">:</span> <span class="token string">&quot;+51997576053&quot;</span><span class="token punctuation">,</span>
+    mensaje<span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+  publicaciones<span class="token operator">:</span> <span class="token punctuation">{</span>
+    paginacion<span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>La mayoría de las propiedades son bastantes descriptivas en cuando a las otras, se detallan a continuación.</p> <p><strong>logoGacetaJuridica:</strong> Url relativa del logo principal que se mostrará en la app</p> <p><strong>openGraph:</strong> Muestra la configuración inicial o por default para todas las páginas dónde no se especifiquen.</p> <p>Son datos importantes para el SEO de la web.</p> <p><strong>whatsapp:</strong> Número y mensaje que se mostrará en el botón flotante de whatsapp.</p> <p><strong>publicaciones:</strong> Contiene información general sobre como se mostrarán las publicaciones.</p> <p>Por ejemplo el número de elementos que se obtendrán en la carga inicial y en cada paginación.</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/guia/" class="prev router-link-active">
+        Introducción
+      </a></span> <span class="next"><a href="/guia/estructura-carpetas.html">
+        Estructura de carpetas
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.8a55b452.js" defer></script><script src="/assets/js/2.eb78078e.js" defer></script><script src="/assets/js/13.f6e4f61a.js" defer></script>
+  </body>
+</html>
