@@ -40,10 +40,10 @@ module.exports = {
         text: "Config",
         link: "/config/",
       },
-      {
+      /* {
         text: "Erick",
         link: "/erick/",
-      },
+      }, */
     ],
     sidebar: {
       "/guia/": [
