@@ -36,11 +36,11 @@ module.exports = {
     editLinkText: "",
     lastUpdated: false,
     nav: [
-      {
+      /* {
         text: "Config",
         link: "/config/",
       },
-      /* {
+      {
         text: "Erick",
         link: "/erick/",
       }, */
